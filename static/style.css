@@ -113,3 +113,18 @@ input.form-control {
 .auth-container a:hover {
   text-decoration: underline;
 }
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
