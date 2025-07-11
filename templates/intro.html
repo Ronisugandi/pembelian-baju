@@ -1,0 +1,46 @@
+<!-- templates/intro.html -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Secress Fashion</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon_large_circle.ico') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='intro.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="intro-container">
+      <div class="intro-content">
+        <div class="text-area">
+          <h1>
+            <strong>SECRESS<br />FASHION</strong>
+          </h1>
+          <p class="lead">
+            Kami menghadirkan produk fashion dengan kualitas terbaik dan harga
+            terjangkau
+          </p>
+          <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg mt-3"
+            >Belanja Sekarang</a
+          >
+        </div>
+        <div class="image-area">
+          <img
+            src="{{ url_for('static', filename='uploads/secress2.png') }}"
+            alt="Sepatu"
+            class="floating-shoe"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

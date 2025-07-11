@@ -1,0 +1,85 @@
+/* static/intro.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8e0f0;
+}
+
+.intro-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background: url(/static/uploads/toko.jpg);
+}
+
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text-area {
+  max-width: 500px;
+}
+
+.text-area h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text-area .lead {
+  color:  #ffffff;
+  margin-bottom: 20px;
+}
+
+.text-area .price {
+  background-color: #4d2c91;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #4d2c91;
+  border: none;
+  padding: 12px 30px;
+}
+
+.btn-primary:hover {
+  background-color: #3b1f6e;
+}
+
+.image-area img {
+  width: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .image-area img {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
