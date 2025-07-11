@@ -90,3 +90,17 @@ img.img-fluid {
     margin-top: 1rem;
   }
 }
+
+.intro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .intro-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+}
